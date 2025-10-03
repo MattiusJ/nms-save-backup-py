@@ -10,7 +10,8 @@ nms_folder_location = os.path.expandvars(r'%APPDATA%\HelloGames\NMS')
 usr_folder = "st_76561198014040903"
 
 #Change this. Specify a location where the backups are to be saved.
-destination_folder_location = r'D:\temp\Backups\NMS'
+destination_folder_location = r'C:\Backups\NMS'
+
 destination_subfolder = d.strftime('%d-%m-%y')
 
 path_copy = os.path.join(nms_folder_location, usr_folder)
