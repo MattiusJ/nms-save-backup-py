@@ -23,7 +23,7 @@ copy_destination = ""
 try:
     os.mkdir(full_backup_path)
 except FileNotFoundError:
-    print('Backup root folder not found')
+    pass
 except FileExistsError:
     print('Folder already exists. Creating a subfolder for new backups.')
 
@@ -32,10 +32,10 @@ try:
     copy_destination = os.path.join(full_backup_path, (d.strftime('%H%M')))
     os.mkdir(copy_destination)
 except FileNotFoundError:
-    print('Backup root folder not found')
+    pass
 except FileExistsError:
     copy_destination = os.path.join(full_backup_path, (d.strftime('%H%M-%S')))
-    os.mkdir(str(copy_destination))
+    os.mkdir(copy_destination)
 
 #Copy folder
 try:
