@@ -1,6 +1,6 @@
 # nms-save-backup-py
 
-Script to take local backups No Man's Sky saves.
+Script to take local backups of No Man's Sky saves.
 
 ## Description
 
